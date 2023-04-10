@@ -1,0 +1,169 @@
+
+<section class="packages" id="packages">
+
+    <h1 class="heading">
+        <span>p</span>
+        <span>a</span>
+        <span>c</span>
+        <span>k</span>
+        <span>a</span>
+        <span>g</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+    <h3 class="deals">Special Deals And<br>
+        Last Minute Amazing Offers</h3>
+        <br>
+    <div class="box-container">
+        
+
+        <div class="box">
+            <img src="\assets\p-1.jpg" alt="">
+            <div class="content">
+                <h3> <fa-icon [icon]="location"> </fa-icon>Mumbai </h3>
+                <p>Royalty, romance and the captivating energy of Mumbai are the highlights along this journey across India.
+                    Mumbai is truly the spirit of all that is India. </p>
+                <div class="stars">
+                    <fa-icon [icon]="Star"> </fa-icon>
+                    <fa-icon [icon]="Star"> </fa-icon>
+                    <fa-icon [icon]="Star"> </fa-icon>
+                    <fa-icon [icon]="Star"> </fa-icon>
+                    <fa-icon [icon]="hstar"> </fa-icon>
+                    
+                </div>
+                <div class="price">Prices From $980.00 </div>
+                <a href="#book" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="\assets\p-2.jpg" alt="">
+            <div class="content">
+                <h3> <fa-icon [icon]="location"> </fa-icon> Germany </h3>
+                <p style="text-transform: none;">See all the sights on this jam-packed Best of Germany trip.
+                    From cutting-edge Berlin, you'll travel back in time and enjoy a medieval banquet in a castle </p>
+                <div class="stars">
+                    <fa-icon [icon]="Star"> </fa-icon>
+                    <fa-icon [icon]="Star"> </fa-icon>
+                    <fa-icon [icon]="Star"> </fa-icon>
+                    <fa-icon [icon]="Star"> </fa-icon>
+                    <fa-icon [icon]="Star"> </fa-icon>
+                </div>
+                <div class="price">Prices From  $850.00  </div>
+                <a href="#book" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="\assets\p-3.jpg" alt="">
+            <div class="content">
+                <h3> <fa-icon [icon]="location"> </fa-icon>Maldives </h3>
+                <p>A Maldives holiday offers you the chance to wiggle your toes in the pristine white 
+                     toss them between your feet . </p>
+                <div class="stars">
+                    <fa-icon [icon]="Star"> </fa-icon>
+                    <fa-icon [icon]="Star"> </fa-icon>
+                    <fa-icon [icon]="Star"> </fa-icon>
+                    <fa-icon [icon]="Star"> </fa-icon>
+                    <fa-icon [icon]="hstar"> </fa-icon>
+                </div>
+                <div class="price">Prices From  $400.00  </div>
+                <a href="#book" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="\assets\p-4.jpg" alt="">
+            <div class="content">
+                <h3> <fa-icon [icon]="location"> </fa-icon> Paris </h3>
+                <p>If there is a place in the world that has been described with thousand adjectives in 
+                    numerous times, undoubtedly that place is Paris,</p>
+                <div class="stars">
+                    <fa-icon [icon]="Star"> </fa-icon>
+                    <fa-icon [icon]="Star"> </fa-icon>
+                    <fa-icon [icon]="Star"> </fa-icon>
+                    <fa-icon [icon]="Star"> </fa-icon>
+                    <fa-icon [icon]="Star"> </fa-icon>
+                </div>
+                <div class="price">Prices From  $720.00 </div>
+                <a href="#book" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="\assets\p-5.jpg" alt="">
+            <div class="content">
+                <h3> <fa-icon [icon]="location"> </fa-icon>  Tokyo </h3>
+                <p>Tokyo has a reputation as one of the world’s safest and most exciting travel destinations,
+                     but there are some things every first-timer needs to know.</p>
+                <div class="stars">
+                    <fa-icon [icon]="Star"> </fa-icon>
+                    <fa-icon [icon]="Star"> </fa-icon>
+                    <fa-icon [icon]="Star"> </fa-icon>
+                    <fa-icon [icon]="hstar"> </fa-icon>
+                </div>
+                <div class="price"> Prices From  $690.00 </div>
+                <a href="#book" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="\assets\p-6.jpg" alt="">
+            <div class="content">
+                <h3> <fa-icon [icon]="location"> </fa-icon> Egypt </h3>
+                <p>Egypt is the most populous country in the Arab world.
+                    Egypt is known for the Great Pyramids of Giza, the greatest royal tombs ever built.</p>
+                <div class="stars">
+                    <fa-icon [icon]="Star"> </fa-icon>
+                    <fa-icon [icon]="Star"> </fa-icon>
+                    <fa-icon [icon]="Star"> </fa-icon>
+                   
+                </div>
+                <div class="price"> Prices From  $500.00 </div>
+                <a href="#book" class="btn">book now</a>
+            </div>
+        </div>
+
+    </div>
+
+    
+
+<div align="center" >
+    <h1 class="heading"> <span>Booked Customers </span></h1>
+    <table>
+        <thead>
+            <tr>
+                <th> ID </th>
+                <th> Name </th>
+                
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr *ngFor="let student of stud">
+                <td> {{student.id}} </td>
+                <td> {{student.name}} </td>
+                      
+            </tr>
+                
+        </tbody>      
+    </table>
+ </div>
+
+
+ <div align="center" class="delete1">
+    <h1 class="heading"> <span>Delete PreBooking </span></h1>
+    <br><br>
+  <form #deleteform="ngForm" (ngSubmit)="deletedata(deleteform)">
+    <div class="form-group">
+    <label>  ID : </label>
+    <input class="inputBox" type="number" #id (ngModel)="id" name="id" id="id" class="form-class">
+    </div> <br>
+   
+    <div class="form-group">
+    <input type="submit" value="Delete" class="btn btn-primary w-100">
+    </div>
+  </form>
+</div>
+
+</section>

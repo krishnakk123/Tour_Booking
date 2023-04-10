@@ -1,0 +1,98 @@
+
+.services .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:25px;
+  }
+  
+  .services .box-container .box{
+    flex: 1 1 30rem;
+    border-radius:  10px;
+    padding:15px;
+    text-align: center;
+  }
+  
+  .services .box-container .box i{
+    padding:15px;
+    font-size: 5rem;
+    color:#db1616;
+  }
+  
+  .services .box-container .box h3{
+    font-size: 40px;
+    color:#333;
+  }
+  
+  .services .box-container .box p{
+    font-size: 25px;
+    color:#666;
+    padding:15px 0;
+  }
+  
+  .services .box-container .box:hover{
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.308);
+  }
+  
+:root{
+    --orange:#db1616;
+  }
+  
+  *{
+    font-family: Helvetica, sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none; border:none;
+    text-decoration: none;
+    transition: all .2s linear;
+  }
+  
+  *::selection{
+    background:rgb(211, 56, 56);
+    color:#fff;
+  }
+  
+  html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 100px;
+    scroll-behavior: smooth;
+  }
+
+  section{
+    padding:30px 9%;
+  }
+
+  .heading{
+    text-align: center;
+    padding:40px;
+  }
+  
+  .heading span{
+    font-size: 50px;
+    background:rgba(221, 41, 131, 0.2);
+    color:rgb(145, 29, 25);
+    border-radius: 5px;
+    padding:.30px 15px;
+  }
+  
+  .heading span.space{
+    background:none;
+  }
+
+  .btn{
+    display: inline-block;
+    margin-top: 15px;
+    background:rgb(145, 29, 25);
+    color:#fff;
+    padding:.125px 50px;
+    border:.30px solid rgb(255, 217, 0);
+    cursor: pointer;
+    font-size: 25px;
+  }
+  
+  .btn:hover{
+    background:rgb(245, 242, 84);
+    color:#db1616;
+  }
+  

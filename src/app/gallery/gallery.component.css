@@ -1,0 +1,114 @@
+
+.gallery .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:25px;
+  }
+  
+  .gallery .box-container .box{
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0,0,0,.1);
+    border:15px solid #fff;
+    border-radius:  10px;
+    flex:1 1 30rem;
+    height: 400px;
+    position: relative;
+  }
+  
+  .gallery .box-container .box img{
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+  }
+  
+  .gallery .box-container .box .content{
+    position: absolute;
+    top:-100%; left:0;
+    height: 100%;
+    width:100%;
+    text-align: center;
+    background:rgba(0,0,0,.7);
+    padding:30px;
+    padding-top: 75px;
+  }
+  
+  .gallery .box-container .box:hover {
+    transform : scale(1.2);
+    transition : transform 0.25s ease;
+    z-index: 1;
+    cursor: zoom-in;
+  }
+  
+  .gallery .box-container .box .content h3{
+    font-size: 40px;
+    color:#db1616;
+  }
+  
+  .gallery .box-container .box .content p{
+    font-size: 25px;
+    color:#eee;
+    padding: 10px 0;
+  }
+  
+:root{
+    --orange:#db1616;
+  }
+  
+  *{
+    font-family: Helvetica, sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none; border:none;
+    text-decoration: none;
+    transition: all .2s linear;
+  }
+  
+  *::selection{
+    background:rgb(211, 56, 56);
+    color:#fff;
+  }
+  
+  html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 100px;
+    scroll-behavior: smooth;
+  }
+
+  section{
+    padding:30px 9%;
+  }
+
+  .heading{
+    text-align: center;
+    padding:40px;
+  }
+  
+  .heading span{
+    font-size: 50px;
+    background:rgba(221, 41, 131, 0.2);
+    color:rgb(145, 29, 25);
+    border-radius: 5px;
+    padding:.30px 15px;
+  }
+  
+  .heading span.space{
+    background:none;
+  }
+
+  .btn{
+    display: inline-block;
+    margin-top: 15px;
+    background:rgb(145, 29, 25);
+    color:#fff;
+    padding:.125px 50px;
+    border:.30px solid rgb(255, 217, 0);
+    cursor: pointer;
+    font-size: 25px;
+  }
+  
+  .btn:hover{
+    background:rgb(245, 242, 84);
+    color:#db1616;
+  }
